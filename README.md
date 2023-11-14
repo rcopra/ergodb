@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+This is a project for my junior dev profile about Ergonomical Mechanical Keyboards. As this is a work in progress, check back soon while I make updates!
