@@ -4,8 +4,6 @@ class CreateQuestionnaireResponses < ActiveRecord::Migration[7.0]
       t.references :user, null: false, foreign_key: true
       t.json :responses
       t.string :session_id
-      t.datetime :created_at
-      t.datetime :updated_at
 
       t.timestamps
     end

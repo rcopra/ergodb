@@ -4,8 +4,6 @@ class CreateKeyboardVotes < ActiveRecord::Migration[7.0]
       t.references :keyboard, null: false, foreign_key: true
       t.references :user, null: false, foreign_key: true
       t.string :vote_type
-      t.datetime :created_at
-
       t.timestamps
     end
   end

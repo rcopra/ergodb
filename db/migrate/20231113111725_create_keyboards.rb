@@ -7,9 +7,6 @@ class CreateKeyboards < ActiveRecord::Migration[7.0]
       t.string :image_url
       t.references :user, null: false, foreign_key: true
       t.boolean :community_uploaded
-      t.datetime :created_at
-      t.datetime :updated_at
-
       t.timestamps
     end
   end
