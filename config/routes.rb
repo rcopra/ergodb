@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "pages#home"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # Root route for the landing page
+  root to: "pages#home"
+
+  # Route for the user dashboard
+  get 'dashboard', to: 'pages#dashboard'
+
+  # Resource routes for keyboards
+  resources :keyboards, only: [:index, :show]
+
+  # Other routes as needed
 end

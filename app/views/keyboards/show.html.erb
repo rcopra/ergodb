@@ -1,0 +1,57 @@
+<%# app/views/keyboards/show.html.erb %>
+
+<h1><%= @keyboard.name %></h1>
+
+
+<% if @keyboard.images.any? %>
+  <% @keyboard.images.each do |image| %>
+    <img src="<%= image.url %>" alt="Keyboard Image">
+  <% end %>
+<% end %>
+
+<div>
+  <strong>Type:</strong> <%= @keyboard.keyboard_type %>
+</div>
+
+<div>
+  <strong>Switches:</strong> <%= @keyboard.switches %>
+</div>
+
+<div>
+  <strong>Layout:</strong> <%= @keyboard.layout %>
+</div>
+
+<div>
+  <strong>Hot Swappable:</strong> <%= @keyboard.hot_swappable ? 'Yes' : 'No' %>
+</div>
+
+<div>
+  <strong>Split:</strong> <%= @keyboard.split ? 'Yes' : 'No' %>
+</div>
+
+<div>
+  <strong>OLED Compatible:</strong> <%= @keyboard.oled_compatible ? 'Yes' : 'No' %>
+</div>
+
+<div>
+  <strong>Wireless:</strong> <%= @keyboard.wireless ? 'Yes' : 'No' %>
+</div>
+
+<div>
+  <strong>Rows:</strong> <%= @keyboard.rows %>
+</div>
+
+<div>
+  <strong>Columns:</strong> <%= @keyboard.columns %>
+</div>
+
+<div>
+  <strong>Thumb Keys:</strong> <%= @keyboard.thumb_keys %>
+</div>
+
+<div>
+  <strong>Github Repo Link:</strong> <%= link_to 'GitHub Repository', @keyboard.github_repo_link %>
+</div>
+
+
+<%= link_to 'Back to Keyboards', keyboards_path %>

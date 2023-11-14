@@ -80,3 +80,5 @@ end
 
 # User auth via Devise
 gem 'devise'
+
+gem "cloudinary"

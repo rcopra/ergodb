@@ -1,0 +1,15 @@
+<%= simple_form_for :search, url: keyboards_path, method: :get, html: { id: 'search-form' }, remote: true do |f| %>
+  <%= f.input :query, as: :string, label: false, placeholder: "Search keyboards...", input_html: { value: params[:query] } %>
+
+  <%= f.input :keyboard_type, collection: ['Pre-Assembled', 'Custom'], include_blank: true, selected: params[:keyboard_type], label: false %>
+  <%= f.input :firmware, collection: ['QMK', 'ZMK', 'TMK', 'Proprietary'], include_blank: true, selected: params[:firmware], label: false %>
+  <%= f.input :switches, collection: ['MX', 'Alps', 'Choc', 'Choc v2'], include_blank: true, selected: params[:switches], label: false %>
+  <%= f.input :layout, collection: ['Row stagger', 'Ortholinear'], include_blank: true, selected: params[:layout], label: false %>
+  <%= f.input :wireless, as: :boolean, selected: params[:wireless], label: 'Wireless?' %>
+  <%= f.input :hot_swappable, as: :boolean, selected: params[:hot_swappable], label: 'Hot Swappable?' %>
+  <%= f.input :oled_compatible, as: :boolean, selected: params[:oled_compatible], label: 'OLED Compatible?' %>
+  <%= f.input :split, as: :boolean, selected: params[:split], label: 'Split?' %>
+  <%= f.input :open_source, as: :boolean, selected: params[:open_source], label: 'Open Source?' %>
+
+  <%= f.button :submit, "Search" %>
+<% end %>

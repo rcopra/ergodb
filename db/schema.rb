@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_14_092232) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_14_124554) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_14_092232) do
   end
 
   create_table "images", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.bigint "keyboard_id", null: false
     t.string "url"
     t.text "description"
@@ -46,13 +46,24 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_14_092232) do
 
   create_table "keyboards", force: :cascade do |t|
     t.string "name"
-    t.text "description"
     t.string "type"
     t.string "image_url"
     t.bigint "user_id", null: false
     t.boolean "community_uploaded"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "keyboard_type"
+    t.string "switches", default: "MX"
+    t.string "layout", default: "Ortholinear"
+    t.boolean "wireless", default: false
+    t.boolean "hot_swappable", default: false
+    t.boolean "oled_compatible", default: false
+    t.boolean "split", default: false
+    t.boolean "open_source", default: false
+    t.integer "rows", default: 3
+    t.integer "columns", default: 5
+    t.integer "thumb_keys", default: 2
+    t.string "github_repo_link"
     t.index ["user_id"], name: "index_keyboards_on_user_id"
   end
 
@@ -73,6 +84,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_14_092232) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
