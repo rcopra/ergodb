@@ -1,1 +1,218 @@
-// Specific CSS for your home-page
+.home {
+  background-color: #dbd6d2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.home .div {
+  background-color: #dbd6d2;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.home .logo {
+  position: absolute;
+  width: 430px;
+  height: 100px;
+  top: 93px;
+  left: 98px;
+}
+
+.home .overlap-group {
+  position: relative;
+  width: 426px;
+  height: 100px;
+}
+
+.home .text-wrapper {
+  position: absolute;
+  width: 426px;
+  top: 0;
+  left: 0;
+  font-family: "Major Mono Display-Regular", monospace;
+  font-weight: 400;
+  color: #393939;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home .text-wrapper-2 {
+  position: absolute;
+  width: 348px;
+  top: 37px;
+  left: 0;
+  font-family: "Michroma-Regular", monospace;
+  font-weight: 400;
+  color: #393939;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .survey-button {
+  position: absolute;
+  width: 402px;
+  height: 72px;
+  top: 703px;
+  left: 853px;
+}
+
+.home .overlap {
+  position: relative;
+  width: 400px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #fa5a45;
+}
+
+.home .text-wrapper-3 {
+  position: absolute;
+  top: 19px;
+  left: 82px;
+  font-family: "Roboto Mono-Bold", monospace;
+  font-weight: 700;
+  color: #fa5a45;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home .text-wrapper-4 {
+  position: absolute;
+  top: 141px;
+  left: 988px;
+  font-family: "Roboto Mono-Bold", monospace;
+  font-weight: 700;
+  color: #393939;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home .text-wrapper-5 {
+  position: absolute;
+  top: 141px;
+  left: 790px;
+  font-family: "Roboto Mono-Bold", monospace;
+  font-weight: 700;
+  color: #393939;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home .line {
+  position: absolute;
+  width: 857px;
+  height: 3px;
+  top: 202px;
+  left: 583px;
+}
+
+.home .foto-keyboard {
+  position: absolute;
+  width: 807px;
+  height: 671px;
+  top: 220px;
+  left: 0;
+  object-fit: cover;
+}
+
+.home .p {
+  position: absolute;
+  width: 501px;
+  top: 422px;
+  left: 857px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .find-out-highlight {
+  position: absolute;
+  width: 489px;
+  height: 72px;
+  top: 577px;
+  left: 857px;
+}
+
+.home .overlap-2 {
+  position: relative;
+  width: 487px;
+  height: 72px;
+}
+
+.home .rectangle {
+  width: 384px;
+  top: 5px;
+  position: absolute;
+  height: 31px;
+  left: 0;
+  background-color: #606569;
+}
+
+.home .rectangle-2 {
+  width: 292px;
+  top: 41px;
+  position: absolute;
+  height: 31px;
+  left: 0;
+  background-color: #606569;
+}
+
+.home .text-wrapper-6 {
+  position: absolute;
+  width: 483px;
+  top: 0;
+  left: 4px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home .login-button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  width: 171px;
+  height: 47px;
+  top: 134px;
+  left: 1171px;
+}
+
+.home .div-wrapper {
+  position: relative;
+  width: 169px;
+  height: 47px;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: #fa5a45;
+}
+
+.home .text-wrapper-7 {
+  position: absolute;
+  top: 7px;
+  left: 45px;
+  font-family: "Roboto Mono-Bold", monospace;
+  font-weight: 700;
+  color: #fa5a45;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
