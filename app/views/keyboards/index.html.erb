@@ -1,3 +1,4 @@
+<% if false %>
 <%= simple_form_for :search, url: keyboards_path, method: :get, html: { id: 'search-form' }, remote: true do |f| %>
   <%= f.input :query, as: :string, label: false, placeholder: "Search keyboards...", input_html: { value: params[:query] } %>
 
@@ -13,3 +14,140 @@
 
   <%= f.button :submit, "Search" %>
 <% end %>
+<% end %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="gallery">
+            <div class="div">
+                <div class="logo">
+                    <div class="overlap-group">
+                        <p class="text-wrapper">O r g a n i c</p>
+                        <div class="text-wrapper-2">keyboards</div>
+                    </div>
+                </div>
+                <div class="horitzontal-menu">
+                    <div class="text-wrapper-3">Profile</div>
+                    <div class="text-wrapper-4">Gallery</div>
+                    <img class="line" src="img/line-1.svg" />
+                    <div class="text-wrapper-5">Data base</div>
+                </div>
+                <div class="overlap">
+                    <div class="size">
+                        <div class="overlap-2">
+                            <div class="text-wrapper-6">Size</div>
+                            <div class="overlap-group-2">
+                                <div class="text-wrapper-7">+</div>
+                                <img class="img" src="img/line-2-8.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controller">
+                        <div class="overlap-2">
+                            <div class="text-wrapper-6">Controller</div>
+                            <div class="overlap-group-2">
+                                <div class="text-wrapper-7">+</div>
+                                <img class="img" src="img/line-2-6.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switches">
+                        <div class="overlap-2">
+                            <div class="text-wrapper-6">Switches</div>
+                            <div class="overlap-group-2">
+                                <div class="text-wrapper-7">+</div>
+                                <img class="img" src="img/line-2-5.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keys-layout">
+                        <div class="overlap-2">
+                            <div class="text-wrapper-8">Keys layout</div>
+                            <div class="overlap-group-2">
+                                <div class="text-wrapper-7">+</div>
+                                <img class="img" src="img/line-2-7.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout">
+                        <div class="overlap-2">
+                            <div class="text-wrapper-6">Layout</div>
+                            <div class="overlap-group-2">
+                                <div class="text-wrapper-7">+</div>
+                                <img class="img" src="img/line-2.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="firmware">
+                        <div class="overlap-2">
+                            <div class="text-wrapper-6">Firmware</div>
+                            <div class="overlap-group-2">
+                                <div class="text-wrapper-7">+</div>
+                                <img class="img" src="img/line-2-9.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bluetooth">
+                        <div class="overlap-2">
+                            <div class="text-wrapper-6">Bluetooth</div>
+                            <div class="overlap-group-2">
+                                <div class="text-wrapper-7">-</div>
+                                <img class="img" src="img/line-2-2.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle"></div>
+                    <div class="rectangle-2"></div>
+                    <div class="rectangle-3"></div>
+                    <div class="clicked-box"><img class="icons-check" src="img/check.svg" /></div>
+                    <div class="icons-check-wrapper"><img class="icons-check" src="img/check-2.svg" /></div>
+                    <div class="img-wrapper"><img class="icons-check" src="img/image.svg" /></div>
+                    <div class="vertical-filters">
+                        <div class="filter">
+                            <div class="overlap-3">
+                                <div class="text-wrapper-6">Type</div>
+                                <div class="overlap-group-2">
+                                    <div class="text-wrapper-7">-</div>
+                                    <img class="img" src="img/line-2-3.svg" />
+                                </div>
+                            </div>
+                            <div class="text-wrapper-9">Any</div>
+                            <div class="text-wrapper-10">Yes</div>
+                            <div class="text-wrapper-11">Custom</div>
+                            <div class="text-wrapper-12">No</div>
+                            <div class="text-wrapper-13">Assembled</div>
+                            <div class="text-wrapper-14">Vintage</div>
+                        </div>
+                        <div class="filter-2">
+                            <div class="text-wrapper-6">Hotswappable</div>
+                            <div class="text-wrapper-15">+</div>
+                            <img class="line-2" src="img/line-2-4.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pics-gallery">
+                    <img class="rectangle-4" src="img/rectangle-13.svg" />
+                    <img class="rectangle-5" src="img/rectangle-17.svg" />
+                    <img class="rectangle-6" src="img/rectangle-14.svg" />
+                    <img class="rectangle-7" src="img/rectangle-18.svg" />
+                    <img class="rectangle-8" src="img/rectangle-19.svg" />
+                    <img class="rectangle-9" src="img/rectangle-12.svg" />
+                    <img class="rectangle-10" src="img/rectangle-16.svg" />
+                    <img class="rectangle-11" src="img/rectangle-20.svg" />
+                    <img class="rectangle-12" src="img/rectangle-21.png" />
+                </div>
+                <div class="search-bar">
+                    <div class="overlap-4">
+                        <img class="icon-artwork" src="img/icon-artwork.svg" />
+                        <div class="text-wrapper-16">Search...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
